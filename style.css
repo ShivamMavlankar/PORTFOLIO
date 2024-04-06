@@ -267,21 +267,34 @@ section {
   position: relative;
 }
 
-.about-containers {
+   .about-containers-q {
+  display: flex;
+  flex-wrap: wrap;
   gap: 0.5rem;
   margin-bottom: 2rem;
   margin-top: 2rem;
+}   
+
+
+.about-containers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .about-details-container {
   justify-content: center;
-  flex-direction: column;
+   flex-direction: column; 
+  
 }
 
-.about-containers,
+
 .about-details-container {
-  display: flex;
+   display: flex;
+   
+   
 }
+
 
 .about-pic {
   border-radius: 2rem;
@@ -293,15 +306,27 @@ section {
   bottom: 2.5rem;
 }
 
-.details-container {
+ .details-container {
   padding: 0.5rem;
-  /* flex: 1; */
+    /* flex: 1;   */
   background: white;
   border-radius: 2rem;
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
-  /* text-align: center; */
-}
+  flex-basis: calc(33.33% - 20px); /* Adjust width as per your preference */
+  margin-bottom: 20px; /* Adjust margin as per your preference */
+ } 
+
+ .details-container-skill {
+  padding: 0.5rem;
+    flex: 1;  
+  background: white;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  flex-basis: calc(33.33% - 20px); /* Adjust width as per your preference */
+  margin-bottom: 20px; /* Adjust margin as per your preference */
+ } 
 
 .section-container {
   gap: 4rem;
@@ -323,14 +348,16 @@ section {
 .experience-sub-title {
   color: rgb(85, 85, 85);
   font-weight: 600;
-  font-size: 1.75rem;
+  font-size: 1.9rem;
   margin-bottom: 2rem;
 }
 
 .experience-details-container {
   display: flex;
   justify-content: center;
-  flex-direction: column;
+   flex-direction: column; 
+  flex: 0 0 calc(33.33% - 10px); /* Adjust width as per your preference  */
+  margin: 5px; 
 }
 
 .article-container {
@@ -431,3 +458,28 @@ footer p {
   text-align: center;
 }
 
+.hh
+{
+   font-size: 2; 
+}
+
+/* //// */
+
+
+.details-container {
+  flex-basis: calc(33.33% - 20px); /* Adjust width as per your preference */
+  margin-bottom: 20px; /* Adjust margin as per your preference */
+}
+
+/* Adjustments for smaller screen sizes
+@media screen and (max-width: 992px) {
+  .details-container {
+    flex-basis: calc(50% - 20px);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .details-container {
+    flex-basis: calc(100% - 20px);
+  }
+} */
